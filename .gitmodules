@@ -2,3 +2,7 @@
 	path = .idea/codeStyles
 	url = https://github.com/onacit/dot-idea-codestyles.git
 	branch = master
+[submodule "src/main/xsd"]
+	path = src/main/xsd
+	url = https://github.com/jinahya/xmpp-extensions-schemas.git
+	branch = master

@@ -1,0 +1,14 @@
+<jaxb:bindings
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+        xmlns:inheritance="http://jaxb2-commons.dev.java.net/basic/inheritance"
+        version="2.1">
+
+    <jaxb:bindings schemaLocation="../../../src/main/xsd/xep-0167-jingle-apps-rtp-1.xsd">
+        <jaxb:bindings node="//xs:complexType[@name='parameterElementType']">
+            <jaxb:property name="irrelevant"/>
+<!--            <inheritance:implements>com.github.jinahya.xmpp.bind.jingle.apps.rtp._1.IParameterElementType</inheritance:implements>-->
+        </jaxb:bindings>
+    </jaxb:bindings>
+
+</jaxb:bindings>
