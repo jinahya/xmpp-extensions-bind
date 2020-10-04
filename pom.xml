@@ -9,7 +9,7 @@
   </parent>
 
   <artifactId>xmpp-extensions-bind</artifactId>
-  <version>0.0.2-SNAPSHOT</version>
+  <version>0.0.2</version>
 
   <name>${project.artifactId}</name>
   <url>https://github.com/onacit/${project.artifactId}</url>
@@ -207,4 +207,8 @@
       </plugin>
     </plugins>
   </reporting>
+
+  <scm>
+    <tag>0.0.2</tag>
+  </scm>
 </project>
