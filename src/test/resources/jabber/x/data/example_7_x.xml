@@ -1,0 +1,5 @@
+<x xmlns='jabber:x:data' type='submit'>
+  <field type='text-single' var='search_request'>
+    <value>verona</value>
+  </field>
+</x>

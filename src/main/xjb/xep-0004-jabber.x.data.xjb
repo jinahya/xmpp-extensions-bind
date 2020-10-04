@@ -1,0 +1,12 @@
+<jaxb:bindings xmlns:xs="http://www.w3.org/2001/XMLSchema"
+               xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+               version="2.1">
+  <jaxb:bindings schemaLocation="../../../src/main/xsd/xep-0004-jabber.x.data.xsd">
+    <jaxb:bindings node="//xs:element[@name='x']/xs:complexType/xs:attribute[@name='type']/xs:simpleType">
+      <jaxb:typesafeEnumClass name="Type"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:element[@name='field']/xs:complexType/xs:attribute[@name='type']/xs:simpleType">
+      <jaxb:typesafeEnumClass name="Type"/>
+    </jaxb:bindings>
+  </jaxb:bindings>
+</jaxb:bindings>

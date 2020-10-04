@@ -1,0 +1,8 @@
+<x xmlns='jabber:x:data' type='form'>
+  <instructions>Fill out this form to search for information!</instructions>
+  <title>Joogle Search</title>
+  <field type='text-single'
+         var='search_request'>
+    <required/>
+  </field>
+</x>
