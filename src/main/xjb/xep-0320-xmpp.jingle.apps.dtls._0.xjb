@@ -1,11 +1,10 @@
-<jaxb:bindings
-        xmlns:xs="http://www.w3.org/2001/XMLSchema"
-        xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
-        xmlns:inheritance="http://jaxb2-commons.dev.java.net/basic/inheritance"
-        version="2.1">
-    <jaxb:bindings schemaLocation="../../../src/main/xsd/xep-0320-xmpp.jingle.apps.dtls._0.xsd">
-        <jaxb:bindings node="//xs:element[@name='fingerprint']/xs:complexType/xs:simpleContent/xs:extension/xs:attribute[@name='setup']/xs:simpleType">
-            <jaxb:typesafeEnumClass name="Setup"/>
-        </jaxb:bindings>
+<jaxb:bindings xmlns:xs="http://www.w3.org/2001/XMLSchema"
+               xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+               version="2.1">
+  <jaxb:bindings schemaLocation="../../../src/main/xsd/xep-0320-xmpp.jingle.apps.dtls._0.xsd">
+    <jaxb:bindings
+        node="//xs:element[@name='fingerprint']/xs:complexType/xs:simpleContent/xs:extension/xs:attribute[@name='setup']/xs:simpleType">
+      <jaxb:typesafeEnumClass name="Setup"/>
     </jaxb:bindings>
+  </jaxb:bindings>
 </jaxb:bindings>

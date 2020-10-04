@@ -1,0 +1,20 @@
+<jaxb:bindings xmlns:xs="http://www.w3.org/2001/XMLSchema"
+               xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+               xmlns:inheritance="http://jaxb2-commons.dev.java.net/basic/inheritance"
+               xmlns:simplify="http://jaxb2-commons.dev.java.net/basic/simplify"
+               version="2.1">
+  <jaxb:bindings schemaLocation="../../../src/main/xsd/xep-0045-org.jabber.protocol.muc_user.xsd">
+    <jaxb:bindings node="//xs:element[@name='x']/xs:complexType/xs:choice">
+      <simplify:as-element-property/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:element[@name='item']/xs:complexType/xs:attribute[@name='affiliation']/xs:simpleType">
+      <jaxb:typesafeEnumClass name="Affiliation"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:element[@name='item']/xs:complexType/xs:attribute[@name='role']/xs:simpleType">
+      <jaxb:typesafeEnumClass name="Role"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:element[@name='status']/xs:complexType">
+      <inheritance:implements>org.jabber.protocol.muc_user.IStatus</inheritance:implements>
+    </jaxb:bindings>
+  </jaxb:bindings>
+</jaxb:bindings>

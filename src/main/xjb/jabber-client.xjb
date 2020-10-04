@@ -1,0 +1,33 @@
+<jaxb:bindings
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+    xmlns:inheritance="http://jaxb2-commons.dev.java.net/basic/inheritance"
+    xmlns:simplify="http://jaxb2-commons.dev.java.net/basic/simplify"
+    version="2.1">
+  <jaxb:bindings schemaLocation="../../../src/main/xsd/jabber-client.xsd">
+    <jaxb:bindings node="//xs:element[@name='message']/xs:complexType/xs:sequence/xs:choice">
+      <simplify:as-element-property/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:element[@name='message']/xs:complexType/xs:attribute[@name='type']/xs:simpleType">
+      <jaxb:typesafeEnumClass name="Type"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:element[@name='presence']/xs:complexType/xs:sequence/xs:choice">
+      <simplify:as-element-property/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:element[@name='presence']/xs:complexType/xs:attribute[@name='type']/xs:simpleType">
+      <jaxb:typesafeEnumClass name="Type"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:element[@name='show']/xs:simpleType">
+      <jaxb:typesafeEnumClass name="Show"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:element[@name='status']/xs:complexType">
+      <inheritance:implements>jabber.client.IStatus</inheritance:implements>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:element[@name='iq']/xs:complexType/xs:attribute[@name='type']/xs:simpleType">
+      <jaxb:typesafeEnumClass name="Type"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:element[@name='error']/xs:complexType/xs:attribute[@name='type']/xs:simpleType">
+      <jaxb:typesafeEnumClass name="Type"/>
+    </jaxb:bindings>
+  </jaxb:bindings>
+</jaxb:bindings>

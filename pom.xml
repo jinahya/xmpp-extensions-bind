@@ -35,6 +35,12 @@
       <scope>test</scope>
     </dependency>
     <dependency>
+      <groupId>jakarta.validation</groupId>
+      <artifactId>jakarta.validation-api</artifactId>
+      <version>2.0.2</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
       <version>${version.org.junit.jupiter}</version>
@@ -136,7 +142,10 @@
         <configuration>
           <args>
             <arg>-nv</arg>
+            <arg>-XenumValue</arg>
             <arg>-Xinheritance</arg>
+            <arg>-Xsimplify</arg>
+            <arg>-Xsimplify-usePluralForm=true</arg>
           </args>
           <bindingDirectory>src/main/xjb</bindingDirectory>
           <plugins>
